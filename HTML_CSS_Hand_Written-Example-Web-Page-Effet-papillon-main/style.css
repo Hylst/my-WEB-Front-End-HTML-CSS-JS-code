@@ -1,0 +1,374 @@
+/* Parametres globaux pour le corps */
+
+body
+{
+    background: #E2DAFF; /* fallback color if gradients are not supported*/ 
+    background: linear-gradient(#E2DAFF, #99FF2D) no-repeat;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+}
+
+/* On définit un bloc page pour cadrer notre contenu dans le body */
+
+#bloc_page
+{
+    width: 900px;
+    margin: auto;
+}
+
+/* design commun titre + nav */
+
+section h1, footer h1, nav a
+{
+    font-family: 'Cookie', script;
+    font-size: 30px;
+    font-weight: normal;  
+}
+
+/* Mise en page du header */
+
+header
+{   
+    position: relative;
+    /* défini une image en bas du backround de la zone header */
+    background: url('img/little_flower_divider.png') repeat-x bottom;
+    /* flex horyzontal pour que le blox nav du menu soit à droite du bloc vertical logo + titre */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#titre_header
+{   /* alignement en colonne de la bannière et du titre */
+    display: flex;
+    flex-direction: column;
+ /*   justify-content: center;*/
+    align-items: center;    
+
+}
+
+#titre_header img
+{   
+    width: 80%;
+}
+
+header h1
+{
+    font-family: 'Cookie', script;
+    font-size: 2.5em;
+    font-weight: normal; 
+    margin: 0 0 0 10px;
+}
+
+header h2
+{
+    font-family: 'Cookie', script;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+#titre_papillon
+{
+    font-size: 4em;
+    font-family: 'Cookie', script;
+}
+
+.deco_float
+{
+    float: left;
+}
+
+#lettrine
+{
+    font-size: xxx-large;
+    font-family: 'Cookie', script;
+}
+
+article p
+{
+    line-height : 1.5em;
+}
+
+#deco_float
+{ 
+    float: left;
+    margin: 5px; 
+}
+
+/* Navigation */
+
+nav ul
+{
+    list-style-type: none;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    list-style-image: url('ico/fleur.png');
+    padding-left: 16px;
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav h2
+{
+ font-size: 1.3em;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-left: 3px;
+    text-decoration: none;
+    /* padding-right: 20px;*/
+}
+
+nav a:hover
+{
+    color: #141;
+    border-left: 5px solid #191;
+}
+
+/* Bannière */
+
+#banniere_image
+{
+    margin-top: 15px;
+    height: 200px;
+    border-radius: 5px;
+    background: url('img/grange_des_champs .jpg') no-repeat;
+    position: relative; /*relative to bottom absolute area down*/
+    box-shadow: 0px 4px 4px #181;   
+    margin-bottom: 25px;
+}
+
+#banniere_description
+{
+    font-family: 'Cookie', script;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 0px 5px 5px;
+    width: 99.5%; /*<100% à cause de l'ombre du fond de la banniere*/
+    height: 28px;
+    padding-top: 15px;
+    padding-left: 4px;
+    background-color: rgba(20,40,20,0.8);
+    color: white;
+    font-size: 1.4em;
+}
+
+.bouton_rouge
+{
+    /* un bouton maison sans balise html eponime */
+    height: 23px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background: linear-gradient(#121, #2A2) no-repeat;
+    border: 1px solid #182;
+    border-radius: 5px;
+
+    text-align: center;
+    padding: 3px 8px 0px 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.bouton_rouge img
+{
+    border: 0;
+}
+
+/* Corps */
+
+section
+{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+article, aside
+{
+    text-align: justify;
+}
+
+article
+{
+    margin-right: 20px;
+    flex: 3;
+}
+
+#colonne_droite
+{
+    display: flex;
+    flex: 0.4;
+    flex-direction: column;
+}
+
+aside
+{
+    flex: 0.2;
+    position: relative;
+    background-color: #171;
+    box-shadow: 0px 3px 5px #181;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+#fleche_bulle
+{
+    position: absolute;
+    top: 100px;
+    left: -12px;
+}
+
+#chat_papillon img
+{
+    border: 1px solid #131;
+    width: 200px;
+}
+
+aside img
+{
+    margin: 0 5px 5px 0;
+}
+
+#protagonistes
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#protagonistes img
+{
+    display: block;
+    width: 128px;
+}
+
+/* Footer */
+
+footer
+{
+    display: flex;
+    background:  url('ico/ico_top.png') no-repeat top center, url('img/little_flower_divider.png') repeat-x top;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+footer p, footer ul
+{
+    font-size: 0.8em;
+}
+
+footer h1
+{
+  /*  text-align: center;*/
+  font-size: 2em;
+}
+
+#reseaux
+{
+    flex: 1;
+    margin-right: 6px;
+}
+
+#ressources
+{
+    flex: 1.8;
+    margin-left: 11px;
+}   
+
+#ressources img
+{
+    width: 32px;
+}   
+
+#credits
+{
+    flex: 2;
+    line-height : 1.4em;
+}
+
+#credits a
+{
+    text-decoration: none;
+    color: #151;
+}
+
+#credits ul
+{
+    list-style-image: url('ico/fleur.png');
+    padding-left: 16px;
+}
+
+#ico_reseaux
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+#ico_reseaux img
+{
+    display: block;
+    margin: 2px;
+}
+
+
+/* Parametres responsive pour s'adapter aux petites résolutions d ecran */
+
+@media all and (max-width: 900px)
+{
+    #bloc_page
+    {
+        width: auto;
+    }
+/*
+    #banniere_image
+    {
+        display: none;
+    }
+*/
+    header
+    {   
+        flex-direction: column;
+        align-items: center;
+    }
+
+        section
+    {
+        flex-direction: column;
+    }
+
+    article, aside
+    {
+        width: auto;
+        margin-bottom: 15px;
+    }
+    
+    #fleche_bulle
+    {
+        display: none;
+    }
+    
+    #chat_papillon img
+    {
+        width: 90%;
+    }
+    
+    /*aside p:last-child
+    {
+        text-align: center;
+    }*/
+
+}
